@@ -9,8 +9,8 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 
 # git-prompt
-if [ -f ~/.git-prompt.bash ]; then
-  source ~/.git-prompt.bash
+if [ -f ~/.git-prompt.sh ]; then
+  source ~/.git-prompt.sh
 fi
 
 if [ -f ~/.bash_aliases ]; then
