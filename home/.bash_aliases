@@ -10,6 +10,7 @@ alias gsign='git commit -C HEAD -S --amend'
 
 # ruby
 alias irbs='irb --simple-prompt'
+alias bert='bundle exec ruby -Ilib:test '
 
 # rails
 alias be='bundle exec '
