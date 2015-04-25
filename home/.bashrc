@@ -129,3 +129,7 @@ fi
 if [ -f ~/.git-prompt.sh ]; then
   . ~/.git-prompt.sh
 fi
+
+# chruby
+. /usr/local/share/chruby/chruby.sh
+. /usr/local/share/chruby/auto.sh
