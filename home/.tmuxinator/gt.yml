@@ -22,7 +22,7 @@ windows:
   - bash:
   - test:
   - console: bundle exec rails c
-  - server: bundle exec rails s -p 3000
+  - server: bin/rails s -b 0.0.0.0 -p 3000
   - sidekiq:
   - mysql: mysql -u root growth_tools_development
 
