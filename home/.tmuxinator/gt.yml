@@ -20,7 +20,7 @@ root: ~/src/growth_tools
 
 windows:
   - bash:
-  - test:
+  - test: bin/guard
   - console: bundle exec rails c
   - server: bin/rails s -b 0.0.0.0 -p 3000
   - sidekiq:
