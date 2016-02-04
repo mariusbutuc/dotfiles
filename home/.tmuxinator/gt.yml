@@ -21,7 +21,7 @@ root: ~/src/growth_tools
 windows:
   - bash:
   - test: bin/guard
-  - console: bundle exec rails c
+  - console: bin/rails c
   - server: bin/rails s -b 0.0.0.0 -p 3000
   - sidekiq:
   - mysql: mysql -u root growth_tools_development
