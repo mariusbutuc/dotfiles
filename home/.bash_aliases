@@ -7,6 +7,8 @@ alias 20='gl -n20 --graph'
 alias 40='gl -n40 --graph'
 alias gl='git log --date=short --pretty=format:"%C(124)%ad %C(24)%h %C(34)%an %C(252)%s%C(178)%d" --stat'
 alias gsign='git commit -C HEAD -S --amend'
+alias gfo='git fetch --prune origin'
+alias gfop='gfo && git pull'
 
 # ruby
 alias irbs='irb --simple-prompt'
