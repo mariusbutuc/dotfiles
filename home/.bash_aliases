@@ -18,3 +18,8 @@ alias bi='bundle check || bundle install --jobs=4'
 alias rc='bin/rails c'
 alias rs='bin/rails s -b 0.0.0.0'
 alias rr='bundle exec rake routes | grep'
+
+# vagrant dev box
+
+alias update_vagrant='cd ~/src/vagrant/ && git pull origin master && vagrant up --provision'
+alias vs='cd ~/src/vagrant/ && vagrant ssh'
