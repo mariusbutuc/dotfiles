@@ -18,7 +18,7 @@ alias bert='bundle exec ruby -Ilib:test '
 alias be='bundle exec '
 alias bi='bundle check || bundle install --jobs=4'
 alias rc='bin/rails c'
-alias rs='bin/rails s -b 0.0.0.0'
+alias rs='bin/rails s -b 0.0.0.0 -p 3000'
 alias rr='bundle exec rake routes | grep'
 
 # vagrant dev box
