@@ -20,7 +20,6 @@
 [user]
         name = Marius Butuc
         email = marius.butuc@gmail.com
-        affiliation = Shopify
 [alias]
         br = branch
         ci = commit
