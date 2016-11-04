@@ -120,16 +120,6 @@ export PATH=/usr/local/sbin:$PATH
 # Custom Prompt
 PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
-# git
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
-fi
-
-# git-prompt
-if [ -f ~/.git-prompt.sh ]; then
-  . ~/.git-prompt.sh
-fi
-
 # chruby
 . /usr/local/share/chruby/chruby.sh
 . /usr/local/share/chruby/auto.sh
