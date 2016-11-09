@@ -25,6 +25,7 @@
         ci = commit
         co = checkout
         st = status
+        please = push --force-with-lease
 [core]
         editor = vim
         excludesfile = ~/.gitignore
