@@ -10,6 +10,16 @@
 	<integer>1</integer>
 	<key>Default Bookmark Guid</key>
 	<string>F121E80E-F04F-4987-B78C-7267B831AF79</string>
+	<key>DisableFullscreenTransparency</key>
+	<false/>
+	<key>HideActivityIndicator</key>
+	<false/>
+	<key>HideScrollbar</key>
+	<false/>
+	<key>HideTabCloseButton</key>
+	<true/>
+	<key>JobName</key>
+	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
@@ -44,7 +54,7 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 93 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>269 126 796 473 0 0 1440 877 </string>
+	<string>269 218 796 473 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>176 70 570 452 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -728,8 +738,22 @@
 	<date>2016-11-10T21:36:12Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
-	<key>ShowFullScreenTabBar</key>
+	<key>ShowBookmarkName</key>
 	<false/>
+	<key>ShowFullScreenTabBar</key>
+	<true/>
+	<key>ShowNewOutputIndicator</key>
+	<true/>
+	<key>ShowPaneTitles</key>
+	<false/>
+	<key>TabStyle</key>
+	<integer>0</integer>
+	<key>TabViewType</key>
+	<integer>0</integer>
+	<key>UseBorder</key>
+	<false/>
+	<key>WindowNumber</key>
+	<true/>
 	<key>WordCharacters</key>
 	<string>-+\~_</string>
 	<key>findIgnoreCase_iTerm</key>
