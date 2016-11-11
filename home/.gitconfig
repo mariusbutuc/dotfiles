@@ -28,7 +28,7 @@
         please = push --force-with-lease
 [core]
         editor = vim
-        excludesfile = ~/.gitignore
+        excludesfile = ~/.gitignore_global
         whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [github]
         user = mariusbutuc
