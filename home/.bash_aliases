@@ -1,5 +1,5 @@
 # general
-alias reload='. ~/.bashrc'
+alias reload='. ~/.bash_profile'
 
 # git
 alias 10='gl -n10 --graph'
