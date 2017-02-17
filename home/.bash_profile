@@ -32,6 +32,7 @@ fi
 export PATH=/usr/local/sbin:$PATH
 
 # Custom Prompt
+GIT_PS1_SHOWDIRTYSTATE=true
 PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
 . $HOME/.asdf/asdf.sh
