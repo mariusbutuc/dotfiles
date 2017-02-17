@@ -34,6 +34,5 @@ export PATH=/usr/local/sbin:$PATH
 # Custom Prompt
 PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
-# chruby
-. /usr/local/share/chruby/chruby.sh
-. /usr/local/share/chruby/auto.sh
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
