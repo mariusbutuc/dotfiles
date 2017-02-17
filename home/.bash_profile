@@ -28,7 +28,7 @@ fi
 
 # Custom Prompt
 GIT_PS1_SHOWDIRTYSTATE=true
-PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+PS1='[\W$(__git_ps1 " (%s)")]\$ '
 
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
