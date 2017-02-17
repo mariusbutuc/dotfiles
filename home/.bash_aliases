@@ -21,7 +21,13 @@ alias rc='bin/rails c'
 alias rs='bin/rails s -b 0.0.0.0 -p 3000'
 alias rr='bundle exec rake routes | grep'
 
-# vagrant dev box
+# enable color support of ls and also add handy aliases
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias ggrep='ggrep --color=auto'
 
-alias update_vagrant='cd ~/src/vagrant/ && git pull origin master && vagrant up --provision'
-alias vs='cd ~/src/vagrant/ && vagrant ssh'
+alias ls='ls --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
