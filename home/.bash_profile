@@ -26,9 +26,19 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
 
-# Custom Prompt
-GIT_PS1_SHOWDIRTYSTATE=true
-PS1='[\W$(__git_ps1 " (%s)")]\$ '
+# Set CLICOLOR if you want Ansi Colors in iTerm2
+CLICOLOR=1
+
+# Set colors to match iTerm2 Terminal Colors
+TERM=xterm-256color
+
+# Customize git-prompt
+GIT_PS1_SHOWCOLORHINTS=y
+GIT_PS1_SHOWDIRTYSTATE=*
+GIT_PS1_SHOWSTASHSTATE=$
+GIT_PS1_SHOWUNTRACKEDFILES=%
+GIT_PS1_SHOWUPSTREAM=auto
+PROMPT_COMMAND='__git_ps1 "[\W" "]\\\$ "'
 
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
