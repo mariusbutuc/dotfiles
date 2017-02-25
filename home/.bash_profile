@@ -32,13 +32,17 @@ CLICOLOR=1
 # Set colors to match iTerm2 Terminal Colors
 TERM=xterm-256color
 
+TEXT_BOLD="\e[1m"
+TEXT_DIM="\e[2m"
+TEXT_RESET="\e[0m"
+
 # Customize git-prompt
 GIT_PS1_SHOWCOLORHINTS=y
 GIT_PS1_SHOWDIRTYSTATE=*
 GIT_PS1_SHOWSTASHSTATE=$
 GIT_PS1_SHOWUNTRACKEDFILES=%
 GIT_PS1_SHOWUPSTREAM=auto
-PROMPT_COMMAND='__git_ps1 "[\W" "]\\\$ "'
+PROMPT_COMMAND='__git_ps1 "[\W" "]$TEXT_BOLD\\\$$TEXT_RESET "'
 
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
