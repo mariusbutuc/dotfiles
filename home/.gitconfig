@@ -28,6 +28,7 @@
         please = push --force-with-lease
         # git sync upstream master
         sync = "!f() { git co $2 && git fetch $1 $2 && git merge $1/$2; }; f"
+        praise = blame
 [core]
         editor = vim
         excludesfile = ~/.gitignore_global
