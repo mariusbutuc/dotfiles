@@ -44,5 +44,4 @@ GIT_PS1_SHOWUNTRACKEDFILES=%
 GIT_PS1_SHOWUPSTREAM=auto
 PROMPT_COMMAND='__git_ps1 "[\W" "]$TEXT_BOLD\\\$$TEXT_RESET "'
 
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+. /usr/local/opt/asdf/asdf.sh
