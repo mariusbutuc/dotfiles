@@ -45,3 +45,5 @@ GIT_PS1_SHOWUPSTREAM=auto
 PROMPT_COMMAND='__git_ps1 "[\W" "]$TEXT_BOLD\\\$$TEXT_RESET "'
 
 . /usr/local/opt/asdf/asdf.sh
+
+export ERL_AFLAGS="-kernel shell_history enabled"
