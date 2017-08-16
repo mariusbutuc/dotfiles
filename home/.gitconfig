@@ -1,3 +1,12 @@
+[alias]
+        br = branch
+        ci = commit
+        co = checkout
+        st = status
+        please = push --force-with-lease
+        # git sync upstream master
+        sync = "!f() { git co $2 && git fetch $1 $2 && git merge $1/$2; }; f"
+        praise = blame
 [color]
         branch = auto
         diff = auto
@@ -17,18 +26,6 @@
         added = yellow
         changed = green
         untracked = cyan
-[user]
-        name = Marius Butuc
-        email = marius.butuc@gmail.com
-[alias]
-        br = branch
-        ci = commit
-        co = checkout
-        st = status
-        please = push --force-with-lease
-        # git sync upstream master
-        sync = "!f() { git co $2 && git fetch $1 $2 && git merge $1/$2; }; f"
-        praise = blame
 [core]
         editor = vim
         excludesfile = ~/.gitignore_global
@@ -39,3 +36,6 @@
         rebase = true
 [push]
         default = simple
+[user]
+        name = Marius Butuc
+        email = marius.butuc@gmail.com
