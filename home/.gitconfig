@@ -36,6 +36,9 @@
         rebase = true
 [push]
         default = simple
+[rebase]
+        autosquash = true
+        autostash = true
 [user]
         name = Marius Butuc
         email = marius.butuc@gmail.com
