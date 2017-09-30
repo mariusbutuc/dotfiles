@@ -48,6 +48,8 @@ export CDPATH=.:~:~/Code:~/Code/pw
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 function ods_content() {
-  local basename="${1:?${FUNCNAME[0]} needs a basename}"
-  unzip -p "$basename.ods" content.xml | xmlformat > "$basename.xml"
+  local filename="${1:?${FUNCNAME[0]} needs a filename}"
+  local basename=`basename "$filename" .ods`
+  local dirname=`dirname "$filename"`
+  unzip -p "$dirname/$basename.ods" content.xml | xmlformat > "$dirname/$basename.xml"
 }
