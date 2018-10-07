@@ -47,6 +47,11 @@ fi
 export CDPATH=.:~:~/Code:~/Code/pw
 export ERL_AFLAGS="-kernel shell_history enabled"
 
+# $ mix help ecto.gen.migration
+# This generator will automatically open the generated file if you have
+# ECTO_EDITOR set in your environment variable.
+export ECTO_EDITOR=subl
+
 function ods_content() {
   local filename="${1:?${FUNCNAME[0]} needs a filename}"
   local basename=`basename "$filename" .ods`
