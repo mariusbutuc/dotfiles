@@ -58,3 +58,13 @@ function ods_content() {
   local dirname=`dirname "$filename"`
   unzip -p "$dirname/$basename.ods" content.xml | xmlformat > "$dirname/$basename.xml"
 }
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/mariusbutuc/exec -l /bin/bash/google-cloud-sdk/path.bash.inc' ]; then
+  . '/Users/mariusbutuc/exec -l /bin/bash/google-cloud-sdk/path.bash.inc'
+fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/mariusbutuc/exec -l /bin/bash/google-cloud-sdk/completion.bash.inc' ]; then
+  . '/Users/mariusbutuc/exec -l /bin/bash/google-cloud-sdk/completion.bash.inc'
+fi
