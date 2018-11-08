@@ -68,3 +68,6 @@ fi
 if [ -f '/Users/mariusbutuc/exec -l /bin/bash/google-cloud-sdk/completion.bash.inc' ]; then
   . '/Users/mariusbutuc/exec -l /bin/bash/google-cloud-sdk/completion.bash.inc'
 fi
+
+# Bypass the gettext shim added by asdf when installing python anaconda3-5.3.0
+export PATH="/usr/local/opt/gettext/bin:$PATH"
