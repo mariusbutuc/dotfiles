@@ -59,14 +59,14 @@ function ods_content() {
   unzip -p "$dirname/$basename.ods" content.xml | xmlformat > "$dirname/$basename.xml"
 }
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/mariusbutuc/exec -l /bin/bash/google-cloud-sdk/path.bash.inc' ]; then
-  . '/Users/mariusbutuc/exec -l /bin/bash/google-cloud-sdk/path.bash.inc'
+# Update PATH for the Google Cloud SDK.
+if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc' ]; then
+  . '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
 fi
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/mariusbutuc/exec -l /bin/bash/google-cloud-sdk/completion.bash.inc' ]; then
-  . '/Users/mariusbutuc/exec -l /bin/bash/google-cloud-sdk/completion.bash.inc'
+# Enable shell command completion for gcloud.
+if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc' ]; then
+  . '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
 fi
 
 # Bypass the gettext shim added by asdf when installing python anaconda3-5.3.0
