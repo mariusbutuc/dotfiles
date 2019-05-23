@@ -22,9 +22,8 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # Enable programmable completion features
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
-fi
+#   installed to: /usr/local/etc/bash_completion.d
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 # Set CLICOLOR if you want Ansi Colors in iTerm2
 CLICOLOR=1
