@@ -13,6 +13,16 @@ HISTCONTROL=ignoreboth:erasedups
 HISTSIZE=1000
 HISTFILESIZE=2000
 
+# Set CLICOLOR if you want Ansi Colors in iTerm2
+CLICOLOR=1
+
+# Set colors to match iTerm2 Terminal Colors
+TERM=xterm-256color
+
+TEXT_BOLD="\e[1m"
+TEXT_DIM="\e[2m"
+TEXT_RESET="\e[0m"
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -24,16 +34,6 @@ fi
 # Enable programmable completion features
 #   installed to: /usr/local/etc/bash_completion.d
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
-
-# Set CLICOLOR if you want Ansi Colors in iTerm2
-CLICOLOR=1
-
-# Set colors to match iTerm2 Terminal Colors
-TERM=xterm-256color
-
-TEXT_BOLD="\e[1m"
-TEXT_DIM="\e[2m"
-TEXT_RESET="\e[0m"
 
 # https://github.com/magicmonty/bash-git-prompt
 if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
