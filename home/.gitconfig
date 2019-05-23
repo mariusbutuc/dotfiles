@@ -1,12 +1,8 @@
 [alias]
-        br = branch
-        ci = commit
-        co = checkout
-        st = status
-        please = push --force-with-lease
-        # git sync upstream master
-        sync = "!f() { git co $2 && git fetch $1 $2 && git merge $1/$2; }; f"
-        praise = blame
+	br = branch
+	co = checkout
+	cp = cherry-pick
+	st = status
 [color]
         branch = auto
         diff = auto
