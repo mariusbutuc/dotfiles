@@ -13,6 +13,9 @@ HISTCONTROL=ignoreboth:erasedups
 HISTSIZE=1000
 HISTFILESIZE=2000
 
+# http://www.gnu.org/software/bash/manual/html_node/Bash-Variables.html#index-HISTTIMEFORMAT
+HISTTIMEFORMAT="%F %T "
+
 # Set CLICOLOR if you want Ansi Colors in iTerm2
 CLICOLOR=1
 
