@@ -45,6 +45,7 @@ if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
 fi
 
 . /usr/local/opt/asdf/asdf.sh
+. /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
 
 export CDPATH=.:~:~/Code:~/Code/pw
 export ERL_AFLAGS="-kernel shell_history enabled"
