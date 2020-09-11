@@ -48,7 +48,9 @@ fi
 . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
 
 export CDPATH=.:~:~/Code:~/Code/pw
+
 export ERL_AFLAGS="-kernel shell_history enabled"
+export KERL_CONFIGURE_OPTIONS="--with-ssl=$(brew --prefix openssl)"
 
 # $ mix help ecto.gen.migration
 # This generator will automatically open the generated file if you have
