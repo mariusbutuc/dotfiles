@@ -74,6 +74,7 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   command-not-found
+  docker
   frontend-search
   git
   git-prompt
