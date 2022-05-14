@@ -1,5 +1,7 @@
 {
   "rules": {
-    "guard-for-in": "error"
+    "guard-for-in": "error",
+    "no-var": "error",
+    "prefer-const": "error"
   }
 }
