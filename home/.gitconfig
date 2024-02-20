@@ -38,3 +38,12 @@
 [user]
         name = Marius Butuc
         email = marius.butuc@gmail.com
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+
+[includeIf "gitdir:~/projects/work/"]
+	path = ~/projects/work/.gitconfig
+[includeIf "gitdir:~/projects/oss/"]
+	path = ~/projects/oss/.gitconfig
